@@ -54,4 +54,4 @@ app.get('/req/:query', async function (req, res) {
     res.status(500).send('Error reading CSV file');
   }
 });
-app.listen(port);
+app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))
