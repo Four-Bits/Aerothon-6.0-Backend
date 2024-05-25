@@ -4,6 +4,11 @@ const { parse } = require('csv-parse');
 const fs = require('fs');
 const port = 3000;
 
+const cors = require('cors');  // Import the cors package
+
+
+app.use(cors()); 
+
 const path = './dataIndia.csv';
 //path
 // [
